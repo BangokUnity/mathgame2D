@@ -32,7 +32,7 @@ public class BlockG : MonoBehaviour
         ans3 = x + y - 2;
         ans4 = x + y + 1;
         shuf = Random.Range(0, 4);
-        // shuf¿¡ µû¸¥ Æ®¸®°Å ¼öÁ¤
+        // shufì— ë”°ë¥¸ íŠ¸ë¦¬ê±° ìˆ˜ì •
 
         pro = string.Format("{0} + {1}", x, y);
 
@@ -74,7 +74,7 @@ public class BlockG : MonoBehaviour
             ans3 = x + y - 2;
             ans4 = x + y + 1;
             shuf = Random.Range(0, 4);
-            // shuf¿¡ µû¸¥ Æ®¸®°Å ¼öÁ¤
+            // shufì— ë”°ë¥¸ íŠ¸ë¦¬ê±° ìˆ˜ì •
 
             pro = string.Format("{0} + {1}", x, y);
 
