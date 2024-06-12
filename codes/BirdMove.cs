@@ -17,4 +17,10 @@ public class NewBehaviourScript : MonoBehaviour
             rigid.AddForce(new Vector2(0, speed));
         }
     }
+
+    private void Die()
+    {
+        rigid.velocity = Vector2.zero;
+        GameManager.instance.OnPlayerDead();
+    }
 }
