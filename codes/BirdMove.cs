@@ -20,7 +20,16 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Die()
     {
+        isDead = true;
         rigid.velocity = Vector2.zero;
         GameManager.instance.OnPlayerDead();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Dead" && !isDead)
+        {
+            Die();
+        }
     }
 }
