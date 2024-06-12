@@ -4,6 +4,8 @@ public class NewBehaviourScript : MonoBehaviour
 {
     void Update()
     {
-            transform.Translate(Vector3.left * speed * Time.deltatime)
+            if (!GameManager.instance.isGameover) {
+                transform.Translate(Vector3.left * speed * Time.deltatime);
+            }
     }
 }
